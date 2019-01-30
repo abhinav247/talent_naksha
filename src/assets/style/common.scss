@@ -1,0 +1,240 @@
+html{height: 100%;
+    box-sizing: border-box;}
+  body {
+    font-family: "robotoregular","robotolight"  !important;
+    font-size: 14px;
+    color: #787878;
+    background-color: #fafafa;
+    position: relative;
+    margin: 0;
+    padding-bottom: 124px;
+    min-height: 100%;
+  }
+
+.row__expanded{
+  background-color: #ffffff;
+
+  label{
+    font-size: 16px;
+    font-family: 'robotobold'
+  }
+}
+
+.row__expanded .events__details {
+  label{
+    font-size: 14px;
+  }
+  span {
+    font-family: 'robotolight'
+  }
+}
+
+  
+ thead th {
+    padding: 12px 10px !important;
+    font-size: 17px;
+    font-family: robotobold;
+    color: #005181;
+}
+tbody>tr>td {
+    padding: 8px 12px;
+    font-family: robotolight;
+    color: #000000;
+}
+
+
+@media only screen and (min-width : 1224px) {
+
+
+}
+
+.add__event{
+  width: 217px;
+  height: 38px;
+}
+
+.events__details{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 13px;
+}
+
+.job__report{
+  margin-top: 45px;
+}
+
+
+.days_spent{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #3c3c3c
+}
+
+.job_status{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #3c3c3c
+}
+
+.job__event{
+  margin: 14px 0;
+  padding: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px solid #3c3c3c;
+  width: 217px;
+  /* height: 38px; */
+  background-color: rgba(77, 184, 234, 0.3);
+}
+
+.job__description{
+    width: 100%;
+    height: 304px;
+    border-radius: 15px;
+    background-color: rgba(77, 184, 234, 0.3);
+}
+
+.sla_event{
+  position: relative;
+  background-color: rgba(77, 184, 234, 0.3);
+  border: 1px solid #3c3c3c;
+  height: 38px;
+  width: 217px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+  font-size: 14px;
+
+  .event_description{
+    font-family: 'robotoregular'
+  }
+
+  .event_sla{
+    font-family: 'robotoblack'
+  }
+
+}
+
+.three-dotMenu{
+    z-index:99999;
+    background-color: #ffffff;
+    position: absolute;
+    border:1px solid;
+    right: 18px;
+   .job-action{
+    padding: 15px;
+    color: #3c3c3c;
+    font-size: 18px;
+    font-family: robotoregular;
+   }
+   .job-action:hover{
+      background-color: #005181;
+      color: #ffffff;
+   }
+
+}
+
+
+.job-status {
+  font-family: robotoblack;
+  color:#445460;
+
+  &.inprogress{
+     color: #4db8e9
+  }   
+}
+
+.job-signal {
+  font-family: robotobold;
+
+  &.on-track{
+    color:#ffc107
+  }
+  &.delayed{
+    color:#f44336
+  }
+  &.before-time{
+    color:#0f9014
+  }
+}
+
+
+.sla_button {
+    position: absolute;
+    right: 0;
+    border: 0;
+    border-left: 1px solid;
+    width: 30px;
+    height: 100%;
+
+    &.in-progress{
+    background-color: rgba(77, 184, 234, -0.7);
+    }
+
+    &.on-track{
+      background-color: #ffc107;
+      }
+      &.before-time{
+        background-color: #0f9014;
+        }
+      &.delayed{
+        background-color: #f44336;
+      }
+}
+
+
+
+
+ tbody tr td:nth-child(2) {
+   font-family: robotoregular;
+}
+
+
+//  tbody tr td:nth-child(6) {
+//   font-family: robotobold;
+// }
+
+ tbody tr{
+  background-color: #ffffff
+}
+
+
+ .jobs tbody tr.active{
+   background-color: #005181;
+   border-bottom: 0;
+   td{
+    color:#ffffff;
+   }
+   input {
+     color:#3c3c3c
+   }
+}
+
+
+
+
+table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+// table > thead > tr {
+//   border-bottom: 2px solid #4db8e9;
+// }
+table > tbody > tr {
+  border-bottom: 2px solid #4db8e9;
+}
+
+table > thead > tr > th {
+  vertical-align: bottom;
+  // border-bottom: 2px solid #ddd;
+}
+
+
+  
+  
